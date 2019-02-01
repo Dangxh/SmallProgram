@@ -22,10 +22,11 @@ class Banner
      */
     public function getBanner($id){
         (new IDMustBePositiveInt())->goCheck();
-        $banner = BannerModel::getBannerById($id);
+//        $banner = BannerModel::getBannerById($id);
+        $banner = BannerModel::get($id);
         if(!$banner){
             throw new BannerMissException();
         }
-        return json($banner);
+        return $banner;
     }
 }
