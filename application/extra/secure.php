@@ -5,3 +5,6 @@
  * Date: 2019/2/19
  * Time: 23:12
  */
+return [
+    'token_salt' => 'dangfx'
+];

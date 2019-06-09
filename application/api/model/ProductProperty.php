@@ -9,7 +9,7 @@
 namespace app\api\model;
 
 
-class ProductProperty
+class ProductProperty extends BaseModel
 {
-
+    protected $hidden = ['product_id', 'delete_time', 'id'];
 }
